@@ -1,7 +1,7 @@
 #!/bin/sh
 
 : <<-'EOF'
-Copyright 2017 Xingwang Liao <wks1462@gmail.com>
+Copyright 2017 Xingwang Liao <kuoruan@gmail.com>
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -38,9 +38,9 @@ cat >&2 <<-'EOF'
 #######################################################
 # OpenVZ BBR 一键安装脚本                             #
 # 该脚本用于在 OpenVZ 服务器上安装配置 Google BBR     #
-# 脚本作者: Xingwang Liao <wks1462@gmail.com>         #
-# 作者博客: https://blog.wks1462.com/                 #
-# Github: https://github.com/wks1462/shell-scripts    #
+# 脚本作者: Xingwang Liao <kuoruan@gmail.com>         #
+# 作者博客:lost link https://blog.kuoruan.com/                 #
+# Github still live: https://github.com/kuoruan2/shell-scripts    #
 # QQ交流群: 43391448, 68133628                        #
 #           633945405                                 #
 #######################################################
