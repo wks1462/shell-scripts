@@ -104,8 +104,8 @@ pre_check() {
 }
 
 clear_iptables_rules() {
-	iptables -t nat -D PREROUTING -i ${INTERFACE} -j ${LKL_IN_CHAIN_NAME} 2>/dev/null
-
+	#iptables -t nat -D PREROUTING -i ${INTERFACE} -j ${LKL_IN_CHAIN_NAME} 2>/dev/null
+	iptables -t nat -A PREROUTING -i ${INTERFACE} -p tcp --dport 8000:8999 -j ${LKL_IN_CHAIN_NAME} 2>/dev/null
 	iptables -t nat -F ${LKL_IN_CHAIN_NAME} 2>/dev/null
 	iptables -t nat -X ${LKL_IN_CHAIN_NAME} 2>/dev/null
 }
